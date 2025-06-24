@@ -46,7 +46,7 @@ if selected_item == "健康相談":
         temperature=0.5
     )
     st.write(completion.choices[0].message.content)
-    
+
 else: # 育児相談
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
